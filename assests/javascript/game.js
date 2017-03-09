@@ -1,25 +1,27 @@
 $(document).ready(function() {
 
+
     var randomNum = null;
     var red = Math.floor(Math.random() * 12) + 1;
     var blue = Math.floor(Math.random() * 12) + 1;
     var green = Math.floor(Math.random() * 12) + 1;
     var yellow = Math.floor(Math.random() * 12) + 1;
-    var score = 0;
+    var totalScore = 0;
     var wins = 0;
     var losses = 0;
 
-
     function newGame() {
+
         // Generate a random number 
         randomNum = Math.floor(Math.random() * 120) + 19;
-        $("#randomnum").html(randomNum);
+        $(".randomnum").html(randomNum);
         // console.log (randomnum);
 
         // Random number generated when each gem is clicked
+
         $('.red').on('click', function() {
-            score = score + red;
-            $("#score").html(score);
+            totalScore += red;
+            $("#score").html(totalScore);
 
             checkWin();
         });
@@ -27,25 +29,26 @@ $(document).ready(function() {
 
 
         $('.blue').on('click', function() {
-            score = score + blue;
-            $("#score").html(score);
+            totalScore += blue;
+            $("#score").html(totalScore);
             checkWin();
         });
 
 
         $('.yellow').on('click', function() {
-            score = score + yellow;
-            $("#score").html(score);
+            totalScore += yellow;
+            $("#score").html(totalScore);
             checkWin();
         });
 
 
         $('.green').on('click', function() {
-            score = score + green;
-            $("#score").html(score);
+            totalScore += green;
+            $("#score").html(totalScore);
 
             checkWin();
         });
+
 
     }
     newGame();
@@ -54,15 +57,18 @@ $(document).ready(function() {
     function checkWin() {
 
 
-        if (score == randomNum) {
+        if (totalScore == randomNum) {
             wins++;
             $("#wins").html('Wins: ' + wins);
             restart();
+            newGame();
+
         }
-        if (score > randomNum) {
+        if (totalScore > randomNum) {
             losses++;
             $("#losses").html('Losses: ' + losses);
             restart();
+            newGame();
 
         }
 
@@ -73,12 +79,13 @@ $(document).ready(function() {
 
 
     function restart() {
-        randomnum = null;
+        randomnum = 0;
         red = 0;
         blue = 0;
         green = 0;
         yellow = 0;
-        score = null;
+        totalScore = 0;
+        restart();
         newGame();
 
     }

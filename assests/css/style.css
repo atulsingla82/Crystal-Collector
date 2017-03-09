@@ -1,85 +1,75 @@
 body {
     background: url(Background.jpg);
-    /*  background-color: grey;*/
-    padding: 10px;
 }
 
-h2 {
-    /*background-color: #bb7f75;*/
-    height: 80px;
-    text-align: center;
-    padding: 12px;
+h1 {
     color: white;
-    width: auto;
-    margin: 10px;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Slackey', cursive;
+    font-size: 50px;
 }
 
-.main {
-    font-size: 18px;
-    background-color: #c0d6de;
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
-}
-
-#randomnum {
-    background-color: rgba(41, 214, 214, 0.58);
+.randomnum {
     height: 100px;
+    font-family: 'Special Elite', cursive;
+    padding-top: 20px;
     text-align: center;
     font-size: 40px;
-    padding-top: 30px;
 }
 
 .winloss {
-    background-color: rgba(41, 214, 214, 0.58);
     height: 100px;
     text-align: center;
-    font-size: 15px;
+    font-size: 30px;
+    font-family: 'Slackey', cursive;
 }
 
 .yourscore {
     height: 30px;
-    background-color: hsla(296, 17%, 29%, 0.35);
-    ;
     color: white;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Slackey', cursive;
     font-size: 22px;
+    text-align: center;
 }
 
 #score {
     background-color: hsla(296, 17%, 29%, 0.35);
     ;
     height: 150px;
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
     padding-top: 30px;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Radley', serif;
     color: white;
 }
 
-button {
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
+.gembuttons {
+    background-color: Transparent;
+    background-repeat: no-repeat;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-button.hover {
-    background-color: #3e8e41
+.gembuttons:hover {
+    background: none;
 }
 
-button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+.insbutton {
+    background-color: teal;
 }
 
-img {
-    mix-blend-mode: multiply;
+.instructions {
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    float: right;
+    box-shadow: none;
+}
+
+.losses {
+    float: right;
+}
+
+#winnum {
+    font-family: 'Radley', serif;
+    font-size: 18px;
 }
