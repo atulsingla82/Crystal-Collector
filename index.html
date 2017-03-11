@@ -20,7 +20,6 @@
         </div>
     </div>
     <br>
-    <br>
     <div class="row">
         <div class="col-md-12 col-xs-12 text-center instructions">
             <button type="button" class="btn btn-info btn-lg insbutton" data-toggle="modal" data-target="#myModal">How to Play </button>
@@ -37,7 +36,7 @@
                                 <br>
                                 <br> You have four crystals. Each crystal will add a specific amount of points to your total score.
                                 <br>
-                                <br> You win the game by matching your total score to the random number. You lose if your total score goes above the random number.
+                                <br> You win the game by matching your total score to the winning number. You lose if your total score goes above the winning number.
                                 <br>
                                 <br> The value of each crystal is revealed when you click on a specific one.
                                 <br>
@@ -61,20 +60,23 @@
         </div>
     </div>
     <br>
-    <div class="row winloss">
-        <div class="col-md-10 col-xs-12 col-md-offset-1 score">
+    <div class="row scoreboard">
+        <div class="col-md-10 col-xs-12 col-md-offset-1 ">
             <p id="wins"> Wins: </p>
             <p id="losses"> Losses:</p>
         </div>
     </div>
     <br>
     <div class="row gembuttons">
-        <div class="col-md-5 col-xs-10 col-md-offset-4">
-            &nbsp; &nbsp;
-            <button class="btn btn-default red gembuttons"><img src="assests/images/red.jpg" width="65" /></button>&nbsp;
-            <button class="btn btn-default blue gembuttons"><img src="assests/images/blue.jpg" width="65" /></button>&nbsp;
-            <button class="btn btn-default yellow gembuttons"><img src="assests/images/yellow.jpg" width="65" /></button>&nbsp;
-            <button class="btn btn-default green gembuttons"><img src="assests/images/green.jpg" width="65" /></button>
+        <div class="col-xs-12 ">
+            <center>
+                <div class="box">
+                    <button class="btn btn-circle red gembuttons"><img src="assests/images/red.jpg" width="65" /></button>&nbsp;
+                    <button class="btn btn-circle blue gembuttons"><img src="assests/images/blue.jpg" width="65" /></button>&nbsp;
+                    <button class="btn btn-circle yellow gembuttons"><img src="assests/images/yellow.jpg" width="65" /></button>&nbsp;
+                    <button class="btn btn-circle green gembuttons"><img src="assests/images/green.jpg" width="65" /></button>
+                </div>
+            </center>
         </div>
     </div>
     <br>
@@ -83,10 +85,11 @@
             <p> Your total score is :</p>
         </div>
     </div>
-    </div>
     <div class="row">
         <div class="col-md-10 col-xs-12 col-md-offset-1 ">
-            <p id="score"></p>
+            <center>
+                <p id="score"></p>
+            </center>
         </div>
     </div>
 </body>
